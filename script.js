@@ -23,7 +23,7 @@ else{
 
 var i , no , fact;
 fact = 1;
-no = prompt("enter factorial");
+no = Number(prompt("enter factorial"));
 
 for(i=1; i<=no; i++) {
   fact = fact*i;
@@ -85,22 +85,34 @@ console.log(vowel_count("FULL STACK DEVELOPER at SkillSafari"))
 
 
 // 6.adding rows using JS;
+function insert_Row()
+{
+var x=document.getElementById('rowTable').insertRow(0);
+var y = x.insertCell(0);
+var z = x.insertCell(1);
+var a = x.insertCell(0);
+var b = x.insertCell(1);
+y.innerHTML="chiran";
+z.innerHTML="vip";
 
-// 
+a.innerHTML="Surya";
+b.innerHTML="Full Stack Developer";
+}
+
 
 
 // 8. Write a JavaScript program to find the Armstrong numbers of 3 digits.
 
-let i, j, k;
-i = 1;
-j = 0;
-k = 0;
+// let i, j, k;
+// i = 1;
+// j = 0;
+// k = 0;
 
-for(i=1; i<10; i++)
+for(let i=1; i<10; i++)
 {
-  for(j=0; j<10; j++)
+  for(let j=0; j<10; j++)
   {
-    for(k=0; k<10; k++)
+    for(let k=0; k<10; k++)
     {
       let pow =(Math.pow(i,3) + Math.pow(j,3) + Math.pow(k,3));
       let plus = (i*100 + j*10 + k);
